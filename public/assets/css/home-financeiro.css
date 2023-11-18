@@ -1,0 +1,88 @@
+.Venda.home .contas .conta-receber {  background: #6d9e6d!important;gap:10px}
+.Venda.home .contas .conta-receber small,
+.Venda.home .contas .conta-pagar small
+{ font-size:1rem;}
+.Venda.home .contas .conta-receber small{color:#fff!important}
+.Venda.home .contas .conta-receber h1 {    color: #03e779!important;}
+.Venda.home .caixa-home.conta-receber, 
+
+
+.Venda.home .table thead th {background: #474b86!important;border-bottom: 1px solid #6f7b6f;}
+.Venda.home .table td {border-color: #474b86!important;}
+.Venda.home .table {border-color: #474b86!important;}
+
+
+/*financeiro*/
+.Venda.home.financeiro .contas .conta-receber { background: #474b86!important; border-color: #7c7cdf; }
+.Venda.home.financeiro .contas .conta-pagar { color: #ffe3e3;    background: #754d4d; }
+.Venda.home.financeiro .contas .conta-receber  .text-verde {  color: #54ffbf!important;}
+.Venda.home.financeiro .contas.min .conta-receber,
+.Venda.home.financeiro .contas.min .conta-pagar
+ { padding:1rem!important}
+.Venda.home.financeiro .contas.min .conta-pagar .icon path { stroke: #fd7f64!important;}
+.Venda.home.financeiro .contas .conta-receber.vendames {background: #0da5a7!important;  border-color: #009dff;padding: 1rem 3rem;}
+.Venda.home.financeiro .contas .conta-receber.vendames h1 {    color: #07efff!important;}
+.Venda.home.financeiro .contas .conta-receber h1 {   color: #0fff7d!important;}
+.Venda.home.financeiro .table thead th {background: #323d65!important;    border-bottom: 1px solid #474b86;}
+.Venda.home.financeiro .group-btn{gap:2px}
+.Venda.home.financeiro .group-btn .btn{border-radius:3px;}
+.Venda.home.financeiro .group-btn .btn:first-child{border-radius:40px 3px 3px 40px;}
+.Venda.home.financeiro .group-btn .btn:last-child{border-radius:3px 40px 40px 3px;}
+.Venda.home.financeiro .btn.btn-padrao {border: solid 1px #e88418; background: #e88418;}
+.Venda.home.financeiro .btn.btn-padrao.btn-ativo {border: solid 1px #ee0c0c; background: #ee0c0c;}
+
+.Venda.home.financeiro .grafico {background: #edffff;border-radius:10px}
+
+
+/**/
+@media (max-width:1024px){
+	.Venda.home.financeiro .contas.min .conta-receber {
+    padding: 1rem!important;
+}
+}
+
+
+/**/
+@media (min-width:1024px){
+	.tscroll {  height: 192px;   overflow-y: auto;}
+	.tscroll2 {  height: 250px;   overflow-y: auto;}
+}
+
+
+/**/
+@media (min-width:1280px){
+	.tscroll {  height: 225px;}
+	.Venda.home.financeiro .contas.min .conta-pagar { padding:1rem 2rem!important}
+	.Venda.home.financeiro fieldset{padding:1.5rem 3rem}
+}
+
+/**/
+@media (min-width:1366px){
+	.tscroll { height: 265px;}
+	.Venda.home.financeiro .contas .conta-receber.vendames {padding: 1rem 5rem;}
+	.Venda.home.financeiro .contas.min .conta-receber,
+	.Venda.home.financeiro .contas.min .conta-pagar
+	{ padding:1rem 3rem!important}
+}
+@media (min-width: 1517px){
+.Venda.home .caixa-home.conta-receber, 
+.Venda.home .caixa-home.conta-pagar, 
+.Venda.home .contas .conta-atraso {
+    padding: 3rem 1.6rem;
+}
+
+/**/
+@media (min-width:1920px){
+	.tscroll {  height: 200px;}
+}
+
+
+
+
+
+
+
+
+
+
+

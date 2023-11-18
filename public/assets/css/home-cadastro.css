@@ -1,0 +1,66 @@
+.caixa-home.conta-receber.hoje{background: #19a9fa63;  border-color: #19a9fa;    padding: 4.5rem 2rem!important;}
+.caixa-home.conta-receber.hoje h1 { color: #30b2fd!important;  font-size: 2.3rem!important;  font-weight: bold;}
+.caixa-home.conta-receber.hoje small,
+.caixa-home.conta-receber.aprovado small,
+.caixa-home.caixa-home.conta-pagar small,
+.caixa-home.conta-atraso.pendente small { color: #fff!important;    font-size: 1.1rem;}
+.caixa-home.caixa-home.conta-pagar small{color: #F66648!important; }
+
+.contas.alt .conta-receber.hoje{
+	   padding: 4.5rem!important;background: #42229a63;
+}
+.caixa-home.conta-receber.hoje.alt{
+	padding:1rem!important
+}
+
+.caixa-home.conta-receber.hoje.alt .text-branco{
+	color:#FFF!important
+}
+
+.home.etique .caixa-home.conta-receber.hoje {
+    background: #1a232cbf;
+    border-color: #a383ff;
+}
+
+.home.etique  .table th { background: #30b2fd70!important;}
+.home.etique  .btn.btn-azul { border: solid 1px #a73aea;   background: #5425df;}
+
+
+.home.usuario .caixa-home.conta-receber.hoje {   background: #20123f;    border-color: #501571;}
+.home.usuario .caixa-home.conta-receber.hoje h1 { color: #6645e9!important;}
+.home.usuario .caixa-home.conta-receber svg path{ stroke:#038cda!important;}
+
+
+
+/**/
+@media (min-width:1024px){
+	.tscroll {  height: 192px;   overflow-y: auto;}
+	.tscroll2 {  height: 250px;   overflow-y: auto;}
+}
+
+
+/**/
+@media (min-width:1280px){
+	.tscroll {  height: 225px;}
+}
+
+/**/
+@media (min-width:1366px){
+	.tscroll { height: 265px;}
+}
+
+/**/
+@media (min-width:1920px){
+	.tscroll {  height: 200px;}
+}
+
+
+
+
+
+
+
+
+
+
+

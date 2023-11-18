@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700;900&display=swap');
+*{
+	padding:0;margin:0;	box-sizing:border-box;	-webkit-box-sizing:border-box;	-ms-box-sizing:border-box;	-moz-box-sizing:border-box;	}
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+body{
+	font-family: 'Inter', sans-serif;	font-size:1rem;	
+    background: #000000 url(../img/back-zeus.svg) fixed no-repeat center;
+    background-size: cover;margin-top:0;    height:100%;}
+::-webkit-scrollbar{width:5px; height:7px}
+::-webkit-scrollbar-thumb { background: #454648;border-radius:5px}
+::-webkit-scrollbar-track { background:#cacaca}
+
+:focus{outline:none;transition: opacity .4s;}
+:focus::placeholder{opacity:0;transition: opacity .4s;}
+
+a{text-decoration:none}
+
+.topo{
+    background:none;height:80px;
+    padding-left: 1rem;    position: inherit;
+}
+.topo .conteudo{
+    display: flex!important;
+    justify-content: space-between!important;
+    align-items: center!important;
+}
+.topo .logo{width:137px}
+.conteudo{padding:0 2rem!important}
+.tt{font-weight: 700;color:#fff;margin-bottom: 1rem;font-size:1.5rem}
+.caixa-home.cad{
+    width:100%;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    border-color:#121d24!important;
+    background: #000000b9;
+    min-height: 120px;
+    gap:10px
+}
+.caixa-home.cad:hover{background:#e1b11159}
+.caixa-home.cad:hover svg path{stroke:#fff}
+.caixa-home.cad svg{width:100%}
+.caixa-home.cad svg path{stroke:#e1b111}
+.caixa-home.cad .detalhes span,
+.caixa-home.cad .detalhes small
+{
+    text-transform: uppercase;margin-left:0
+}
+
+
+
+@media (min-width:991px){
+    .col-3 {
+        -ms-flex: 0 0 33.2%;
+        flex: 0 0 33.2%;
+        max-width: 33.2%;
+    }
+    .tt{margin-bottom: 1.5rem;font-size:1.5rem} 
+}
+
+@media (min-width:1100px){
+    .col-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .caixa-home.cad {     grid-template-columns: 50px 1fr;gap:15px  }
+    .caixa-home .detalhes span {  font-weight: 700;  font-size: 1.2rem; }    
+}
+
+@media (min-width:1366px){ 
+     .conteudo {   max-width: 100%;    width: 1200px;    padding: 0;    }
+     .caixa-home.cad { min-height: 123px;   grid-template-columns: 38px 1fr;      padding: 1rem 2rem!important;  }
+}
+

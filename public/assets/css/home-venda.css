@@ -1,0 +1,236 @@
+::-webkit-scrollbar-thumb {   background: #2f3847;}
+::-webkit-scrollbar-track {    background: #080808;}
+body, .topo{background:#14161f}
+.menu-lateral { background: #2f3847;}
+.submenu:hover > ul,.submenu .subcat ul { background: #2f3847;}
+.submenu > ul > li, .submenu .subcat ul li {  border-bottom: solid 1px #313033;}
+.menu-ul a, .int {  padding: 8px 10px!important;}
+.menu-lateral .icon {  width: 1.4rem;    height: 1.4rem;}
+
+.Venda.home .contas .conta-receber,fieldset, .caixafield, .mostraFiltro,.window
+{  background:#6d9e6d linear-gradient(45deg, #6d9e6d 54%, #2f384766)!important;
+gap:10px;border-color: #4e694e!important;}
+
+.tranparent{background:#6d9e6d00!important}
+.tranparent .form-campo{background: #14161f!important;    color: #fff;}
+
+
+.tranparent2{background:#2f384778!important}
+.tranparent2 .form-campo{background: #212631!important;    color: #fff;}
+
+
+.window .form-campo{ background: #e1fefa; color: #4a524dd9;   border-color: #47745c;}
+.window .titulo{ color:#fff}
+
+fieldset .form-campo,  
+.caixafield .form-campo,
+.mostraFiltro .form-campo{ background: #e1fefa; color: #4a524dd9;   border-color: #47745c;}
+.caixafield.tranparent .form-campo{color: #ccccccd9;}
+
+.btn.btn-roxo,.btn.btn-padrao { border: solid 1px #93feaa; background: #93feb1;color:black!important}
+
+ .tabela-responsiva{padding:0}
+ .bg-title .icon.cadastro path,.bg-title .icon.venda path,.bg-title .icon.estoque path
+ { stroke: #6fbe6f!important;}
+ .table th {background: #334433!important;  color: #fff!important;}
+ .dataTables_wrapper { border: solid 2px #334433;}
+ 
+ .form-campo { border: solid 1px #456545;    color: #edededdd;background: #14161f;}
+ .edit-upload.border{border-color:#456545!important}
+
+.Venda.home .contas .conta-receber small{ font-size:1rem;color:#fff!important}
+.Venda.home .contas .conta-receber h1 {    color: #03e779!important;}
+.Venda.home .caixa-home.conta-receber, 
+.Venda.home .caixa-home.conta-pagar, 
+.Venda.home .contas .conta-atraso {
+    padding: 3rem 1rem;
+}
+.dataTables_length select, .dataTables_wrapper .dataTables_filter input {
+    color: #252525;
+    background: #e1fefab3;
+    border: 1px solid #334433;
+}
+.table tbody td {
+    border-bottom: 1px solid #334433;
+}
+.table.min td,
+.table.min th
+{
+	padding: 6px 6px;
+    font-size: .7rem;
+}
+.btn-outline-roxo { border: solid 1px #8ed58e;color: #8ed58e!important;}
+.btn-outline-vermelho {border: solid 1px #fd9595;  background: none!important;  color: #fd9595!important;}
+.cx-opcoes .btn.btn-verde { background: #33dd8e;}
+
+
+/*frente home*/
+.base-pdv .caixa.dark {
+    background: #6d9e6d;
+}
+
+
+/*
+.menu-lateral { background: #537553;}
+.submenu:hover > ul { background: #5c7a5c;}*/
+
+.Venda.home .table thead th {background: #334433!important;border-bottom: 1px solid #6f7b6f;}
+.Venda.home .table td {border-color: #334433!important;}
+.Venda.home .table {border-color: #334433!important;}
+
+
+/*pedidos*/
+.Venda.home.pedidos .contas .conta-receber { background: #474b86!important; border-color: #7c7cdf; }
+.Venda.home.pedidos .contas.min .conta-receber { padding:1.5rem 2rem!important}
+.Venda.home.pedidos .contas .conta-receber.vendames {background: #0da5a7!important;  border-color: #009dff;padding: 1rem 3rem;}
+.Venda.home.pedidos .contas .conta-receber.vendames h1 {    color: #07efff!important;}
+.Venda.home.pedidos .contas .conta-receber h1 {   color: #0fff7d!important;}
+.Venda.home.pedidos .table thead th {   background: #272e47!important;    border-bottom: 1px solid #4d5470;}
+
+.d-inline-flex{display: inline-flex!important;}
+.gap-3{gap:5px}
+.text-verde.border{border-color: #2cb783!important;}
+.tfooter { border-top: solid 1px #304339;}
+.border-bottom {border-bottom: solid 1px #4e694e!important;}
+.border{border-color:#4e694e!important;}
+.ui-widget-header {   border: 1px solid #334433;    background: #355735;}
+#tab ul.tabs>li.ui-state-active>a, #tabs ul>li.ui-state-active>a {    background: #67d35c; color: #27272b;    border: solid 1px #95f756;  font-weight: 900;}
+#tab ul.tabs>li, #tabs ul>li { background: #418389; border: solid 1px #12233f;}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button {
+    background: #6d9e6d;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {  background: #8ed58e!important;}
+.table { border: solid 1px #4c784c!important;}
+.table thead th {  border-bottom-color: #4c784c;}
+.modal_livre .form-campo {
+    border: solid 1px #a3a3a3;
+    color: #575757dd;
+    background: #ececec!Important;
+}
+
+.caixa_modal .table-bordered th {  background: #558774;border:0;border-bottom:solid 1px #fff6;    text-transform: capitalize;}
+.caixa_modal .table-bordered tbody td { color: #f4f4f4;border: 0; border-bottom: solid 1px #fff6;}
+.caixa_modal .table-bordered #linha label,
+.caixa_modal .table-bordered #coluna label
+{display:flex;align-items:center;}
+
+.banner-thumb { min-height: 186px;}
+.textThumb small{display: block;  color: #000000bf;  padding-top: 0.5rem;  text-align: center;    font-weight: bold; min-height: 44px;}
+
+.state-movi{font-size: .76rem;}
+.ientrada,.isaida { padding: 0.2rem 8px;}
+table.table.dataTable tbody td .ientrada,
+table.table.dataTable tbody td .isaida 
+{
+    width: 10px;
+    height: 10px;
+    margin-right: 6px;
+}
+.historico-movimentacao .text-entrada .tt, .historico-movimentacao .text-saldo .tt, .historico-movimentacao .text-estoque .tt, .historico-movimentacao .text-saida .tt,.historico-movimentacao .text-entrada .tp, .historico-movimentacao .text-estoque .tp, .historico-movimentacao .text-saldo .tp, .historico-movimentacao .text-saida .tp
+{color:#fff}
+
+.modal_livre.medio.image{background:#6d9e6d!important}
+.banner-thumb span{font-size:.8rem}
+
+
+fieldset .check input[type=checkbox], 
+.caixafield .check input[type=checkbox], 
+.mostraFiltro .check input[type=checkbox],
+.window .check input[type=checkbox]
+ {  border-color:  #93feb1;}
+
+fieldset .check input[type=checkbox]:checked:before, .check input[type=checkbox]:checked, 
+.check input[type=checkbox]:checked:before, .check input[type=checkbox]:checked, 
+.check input[type=checkbox]:checked:before, .check input[type=checkbox]:checked,
+.window .check input[type=checkbox]:checked:before, .check input[type=checkbox]:checked
+ {  border-color:  #93feb1;color:#93feb1}
+.radio input[type=radio], .check input[type=checkbox] {  border-color: #23d9d3;}
+
+.listaProdutos, .listaClientes, .listaFornecedores, .listaVendedores { border: solid 1px #5c8262;  background: #14161f;    height: 207px;}
+.listaProdutos a:hover, .listaClientes a:hover, .listaFornecedores a:hover, .listaVendedores a:hover {  background: #484e58;}
+.listaProdutos ul li, .listaClientes ul li, .listaFornecedores ul li, .listaVendedores ul li{display:block!important;background:none!important}
+.listaProdutos ul li a, .listaClientes ul li a, .listaFornecedores ul li a, .listaVendedores ul li a{border-radius:0!important;}
+
+.menu-ul li.submenu.top:last-child .subcat ul,
+.menu-ul li.submenu.top:last-child:hover > ul 
+{
+   top: inherit;bottom:0
+}
+.user .banner-thumb span {
+    left: 33%;
+}
+.btn.btn-azul {
+    border: solid 1px #596c8e;
+    background: #3d4e6b;
+}
+.menupermissao ul li{display:block; border-bottom: solid 1px #4e694e;transition:all .s linear}
+.menupermissao ul li a{display: flex; color: #fff; padding:.5rem .7rem; align-items: center;  gap: 8px;}
+.menupermissao ul li:hover{  background: #00000052;transition:all .s linear	}
+
+.financeiro .contas .conta-receber .thumb{	text-align:center;background: #fff; margin-bottom: 1rem;}
+.financeiro .contas .conta-receber{background: #2f384782;}
+.financeiro .contas .conta-receber h2{color:#fff;font-size: .88rem; text-align: center; margin-bottom: 1rem;  padding: 0 .7rem;}
+.financeiro .contas .conta-receber .preco{text-align: center; margin-bottom: 1rem;}
+.financeiro .contas .conta-receber .preco small{display:block;    color: #dd8673!important;}
+.financeiro .contas .conta-receber .preco b {color:#2bada3}
+
+
+.pagamento .caixafield .h5{color:#fff}
+.pagamento .caixafield .text-escuro{color:#ffffff73!important}
+
+/**/
+@media (min-width:768px){
+	.user .banner-thumb span { left: 40%;}
+}
+
+/**/
+@media (min-width:992px){
+	.user .banner-thumb span { left: 12%;}
+}
+
+
+/**/
+@media (min-width:1024px){
+	.tscroll {  height: 192px;   overflow-y: auto;}
+	.tscroll2 {  height: 250px;   overflow-y: auto;}
+	.user .banner-thumb span { left: 20%;}
+}
+
+
+/**/
+@media (min-width:1280px){
+	.tscroll {  height: 225px;}
+	.menu-ul a, .int {  padding: 10px 10px!important;}
+.financeiro .contas .conta-receber h2{font-size: 1rem;padding: 0 1rem;}
+} 
+
+/**/
+@media (min-width:1366px){
+	.menu-ul a, .int {  padding: 10.8px 10px!important;}
+	.user .banner-thumb span { left: 28%;}
+	.tscroll { height: 265px;}
+	.Venda.home.pedidos .contas .conta-receber.vendames {padding: 1rem 5rem;}
+}
+@media (min-width: 1517px){
+.Venda.home .caixa-home.conta-receber, 
+.Venda.home .caixa-home.conta-pagar, 
+.Venda.home .contas .conta-atraso {
+    padding: 3rem 1.6rem;
+}
+
+/**/
+@media (min-width:1920px){
+	.tscroll {  height: 200px;}
+}
+
+
+
+
+
+
+
+
+
+
+

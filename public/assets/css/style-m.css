@@ -1,0 +1,155 @@
+.toggle-button{background:none;border:0;color:#fff;cursor:pointer}
+.verOpcoes{    
+    z-index: 2;
+    width: 200px;
+    right: 0;
+    background: #20123f;
+    border-radius: 8px;
+	padding-bottom:.5rem;
+	transition:opacity .4s;
+	display:none;
+	}
+
+.verOpcoes.toggle{
+	transition:opacity .4s;display:block
+	} 	
+.verOpcoes li {display:block;width: 100%;} 	
+.verOpcoes li.tl{color: #fff;  padding: 0.3rem 0.8rem;  border-bottom: solid 1px #ffffff5e;} 	
+.verOpcoes li a{border:0!important;padding: 7px;  padding-left: 15px;    padding-right: 15px;    font-size: .89rem;} 	
+.verOpcoes li a:hover{background:#00000057} 	
+	
+ /**/
+@media (min-width:768px){
+    .login .conteudo{padding:0 10rem}
+}
+/**/
+@media (min-width:992px){
+    .mobview{display:block}
+    .caixa-home.conta-receber, .caixa-home.conta-pagar {padding: 2rem;   justify-content: left;       text-align: left;    }
+    .caixa-home.conta-pagar .btn-verde,.caixa-home.conta-receber .btn-verde {  font-size: .7rem;  padding: 8px 15px; }
+    .contas .conta-atraso{padding:2rem}
+    .home{padding-top: 1rem;}
+
+    .prossCircular p{position:relative;top:-40%}
+    .caixa-home.cad:hover{ background: #a383ff8c;transition:all .4s linear }
+    .caixa-home.compra:hover{ background: #fdff838c;transition:all .4s linear }
+    .caixa-home.produ:hover{ background: #8AC6E98c;transition:all .4s linear }
+    .caixa-home.estoque:hover {background: #DC6FEE8c;transition:all .4s linear }
+    .login .conteudo {   width: 792px;}
+    .login{display: grid;  align-items: center;}	
+	.selecaoGrade .scroll.alt.mob {     display: block; margin: 0; padding: 0 15px;}
+	.vendasInicial .prodHome {   display: grid;    justify-content: center;}
+	.vendasInicial .prodHome .thumb {   width: 58px;   margin: 0 auto;}
+	.vendasInicial.scroll{    height: calc(100vh - 203px);    overflow-x: auto;}
+	.vendasInicial  .tabela-responsiva.scroll{
+		height: calc(100vh - 359px);    overflow-x: auto;
+	}
+	.base-login .logo{	     width: 169px;    height: 158px;    padding: 12px;}
+	.base-login .caixa-login{ margin: 0 auto;}
+	.selecaoGrade .cxCor .areBtn {
+		display: grid;
+		align-items: center;
+		gap: 7px;
+	}
+	.central .listEtiqueta {
+    display: grid;
+	}
+	.edit-upload span, .banner-thumb span { left: 7%;}
+	.banner-thumb { min-height: 126px;}
+}
+/**/
+@media (min-width:1024px){
+	.edit-upload:hover span {
+		left: 73%;
+		margin-left: -50%;
+	}
+	.lista-miniatura {
+    flex-wrap: wrap;
+    width: auto;
+}
+.edit-upload span{
+	opacity:0;visibility:hidden;
+	transition:opacity .4s linear;
+	left: 23%;
+    top: 45%;
+}
+.edit-upload:hover span{
+	opacity:1;visibility:visible;
+	transition:opacity .4s linear
+	}
+ .banner-thumb span {
+    left: 10%;
+	opacity:0;visibility:hidden;
+	transition:opacity .4s linear;
+}
+ .banner-thumb:hover span {
+	opacity:1;visibility:visible;
+	transition:opacity .4s linear;
+}
+.modal_livre.medio.image{    width: 72%!important;}
+
+}
+
+/**/
+@media (min-width:1200px){
+.modal_livre.medio.image{ width: 757px!important;}
+	.selecaoGrade .cxCor .areBtn {
+    display: flex;
+    align-items: center;
+}
+	.base-login .caixa-login {
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+.base-login .logo {
+    width: 102px;
+    height: 98px;
+    padding: 12px;
+}
+	.banner-thumb span {    left: 19%;}
+    .caixa-home.conta-receber, .caixa-home.conta-pagar,.contas .conta-atraso { padding: 3rem;padding-right: 1.2rem; }
+	.vendasInicial .prodHome {   display: inline-flex;}
+	.vendasInicial .prodHome .thumb {   width: 64px;}
+}
+/**/
+@media (min-width: 1280px){
+	.vendasInicial.scroll {    height: calc(100vh - 203px);    overflow-x: auto;}
+	.edit-upload:hover span {    left: 79%;    margin-left: -50%;}
+}
+
+/**/
+@media (min-width: 1366px){
+	.vendasInicial .prodHome {  display: flex;}
+}
+
+/**/
+@media (min-width: 1517px){
+	.edit-upload:hover span {left: 7%; right: 7%;}
+.caixa-home.conta-receber, .caixa-home.conta-pagar, .contas .conta-atraso { padding: 4rem;}
+.vendasInicial.scroll { max-height: 880px;  min-height: calc(100vh - 45px);}
+.vendasInicial .scroll { min-height: calc(100vh - 574px);}
+.vendasInicial .tabela-responsiva.scroll {
+    height: auto
+}
+.edit-upload:hover span {
+    left: 58%;
+    margin-left: -50%;
+}
+}
+/**/
+@media (min-width: 1707px){
+.caixa-home.conta-receber, .caixa-home.conta-pagar, .contas .conta-atraso { padding: 4rem;}
+.caixa-home { padding: 3rem;}
+}
+
+/**/
+@media (max-width:768px){
+    .submenu .subcat ul {  right: 11rem;      left: inherit;       width: 178px;    }
+    .submenu:hover > ul{width: 178px;}
+}
+
+/**/
+@media (max-width:500px){
+    .menu-lateral:hover {  width: calc(293px - 60px); }
+    .submenu:hover > ul {  left: 14.5rem; }
+}

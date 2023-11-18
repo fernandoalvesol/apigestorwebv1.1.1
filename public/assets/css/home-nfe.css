@@ -1,0 +1,55 @@
+.menu-lateral .logo-text {    width: 240px;}
+.caixa-home.conta-receber.nfe,
+.caixa-home.conta-canceladas.nfe,
+.caixa-home.conta-pagar.nfe{display:flex;gap:30px;width:100%}
+.caixa-home.conta-receber.nfe small,
+.caixa-home.conta-canceladas small,
+.caixa-home.conta-pagar.nfe small{font-size:1.1rem}
+.caixa-home.conta-receber.nfe h1,
+.caixa-home.conta-canceladas h1,
+.caixa-home.conta-pagar.nfe h1 { font-weight: 200;font-size: 3.5rem;}
+.caixa-home.conta-canceladas { border-color: #f6c048; color: #f6c048;    padding: 3rem;   padding-right: 1.2rem;}
+.caixa-home.conta-canceladas .btn-verde{ 
+	font-size: .7rem;
+    padding: 8px 15px;
+	background:#f6c048;border-color:#f6c048;
+}
+.nfe .contas .conta-receber { background: #40857f;  border-color: #03da73;    gap: 30px;}
+.nfe .contas .conta-receber small{font-size: 1.4rem; color: #4fffab!important;}
+.nfe .contas .conta-receber h1 {  color: #2cff99!important;   font-size: 2.9rem!important;}
+.nfe .caixa-home {  border: solid 1px #03da73;}
+.nfe .table th {background: #271d45!important;}
+.nfe .table {border: solid 1px #271d45!important;}
+.nfe .table tbody td{border-bottom: 1px solid #271d45!important}
+/**/
+@media (min-width:1024px){
+	.tscroll {  height: 192px;   overflow-y: auto;}
+	.tscroll2 {  height: 250px;   overflow-y: auto;}
+}
+
+
+/**/
+@media (min-width:1280px){
+	.tscroll {  height: 225px;}
+}
+
+/**/
+@media (min-width:1366px){
+	.tscroll { height: 265px;}
+}
+
+/**/
+@media (min-width:1920px){
+	.tscroll {  height: 200px;}
+}
+
+
+
+
+
+
+
+
+
+
+
