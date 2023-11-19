@@ -10,10 +10,7 @@
                 </a>
                 <ul>
                     <li class="subcat">
-                        <a href="">Caixa</a>   
-                        <ul>
-                            <li><a href="{{ route('caixa.index') }}">Fluxo de Caixa</a></li>
-                        </ul>                     
+                        <a href="{{ route('caixa.index')}}">Fluxo de Caixa</a>                       
                     </li>
 
                     <li class="subcat">
