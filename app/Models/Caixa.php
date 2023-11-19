@@ -11,7 +11,7 @@ class Caixa extends Model
 
     protected $fillable = [
 
-        'id', 'tipo', 'descricao', 'preco', 'data'
+        'id', 'descricao', 'movimento', 'data', 'preco', 'tipo'
 
     ];
 }

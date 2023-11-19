@@ -28,7 +28,7 @@ use App\Http\Controllers\Compra\CompraController;
 use App\Http\Controllers\Compra\DuplicataCompraController;
 use App\Http\Controllers\Compra\ItemCompraController;
 
-use App\Http\Controllers\Estoque\EntradaController;
+//use App\Http\Controllers\Estoque\EntradaController;
 use App\Http\Controllers\Estoque\MovimentoController;
 use App\Http\Controllers\Estoque\ProdutoEstoqueController;
 use App\Http\Controllers\Estoque\SaidaController;
@@ -48,9 +48,9 @@ use App\Http\Controllers\Grade\ProdutoGradeController;
 use App\Http\Controllers\Grade\VariacaoGradeController;
 use App\Http\Controllers\LojaVirtual\LojaBannerController;
 
-use App\Http\Controllers\UtilController;
+//use App\Http\Controllers\UtilController;
 use App\Http\Controllers\HomeControlller;
-use App\Http\Controllers\Importacao\NfeEntradaController;
+//use App\Http\Controllers\Importacao\NfeEntradaController;
 
 use App\Http\Controllers\Usuario\FuncaoController;
 use App\Http\Controllers\Usuario\FuncaoPermissaoController;
@@ -91,6 +91,8 @@ use App\Http\Controllers\Venda\VendaController;
 use App\Http\Controllers\PainelFrenteAdminController;
 use App\Http\Controllers\PainelFrenteLojaController;
 use App\Http\Controllers\Caixa\CaixaController;
+use App\Http\Controllers\Caixa\EntradaController;
+
 
 use Illuminate\Support\Facades\Route;
 
@@ -137,7 +139,7 @@ Route::resource("/tipocontacorrente", TipoContaCorrenteController::class);
 Route::resource("/status", StatusController::class);
 Route::resource("/formapagto", FormaPagtoController::class);
 
- //Estoque
+ /*
  Route::resource('/movimento',MovimentoController::class);
  Route::get("/entrada", [EntradaController::class,"index"])->name("entrada.index");
  Route::post("/entrada/salvarJs", [EntradaController::class,"salvarJs"])->name("entrada.salvarJs");
@@ -147,7 +149,7 @@ Route::resource("/formapagto", FormaPagtoController::class);
 
  Route::get("/produtoestoque/pesquisa",[ProdutoEstoqueController::class,"pesquisa"])->name('produtoestoque.pesquisa');
  Route::resource("/produtoestoque", ProdutoEstoqueController::class);
-
+*/
 
  //Venda
  Route::post("/venda/finalizarVenda", [VendaController::class,"finalizarVenda"])->name("venda.finalizarVenda");
@@ -402,7 +404,7 @@ Route::get('/lojapedido/cupom/{id}',[LojaPedidoController::class, 'cupom'])->nam
 
   Route::resource('/tabelapreco', TabelaPrecoController::class);
 
-
+  /*
   //Nfe Entrada - Importação de XML
   Route::get('/nfeentrada/produtos/{id?}',[NfeEntradaController::class,'produtos'])->name('nfeentrada.produtos');
   Route::get('/nfeentrada/filtro',[NfeEntradaController::class,'filtro'])->name('nfeentrada.filtro');
@@ -417,7 +419,7 @@ Route::get('/lojapedido/cupom/{id}',[LojaPedidoController::class, 'cupom'])->nam
 
   Route::post('/nfeentrada/importar',[NfeEntradaController::class,'importar'])->name('nfeentrada.importar');
   Route::get('/nfeentrada/lerArquivo',[NfeEntradaController::class,'lerArquivo'])->name('nfeentrada.lerArquivo');
-
+*/
 
   //Manifesto
   Route::resource('/emitente',EmitenteController::class);
@@ -502,6 +504,8 @@ Route::get("/util/buscarcnpj/{cnpj}", [UtilController::class, "buscarCNPJ"])->na
 
 //ROTA FLUXO DE CAIXA
 Route::get('/caixa', [CaixaController::class, 'index'])->name('caixa.index');
+Route::get('/entrada', [EntradaController::class, 'index'])->name('entrada.index');
+Route::post('/store', [EntradaController::class, 'store'])->name('entrada.store');
 
 
 });
