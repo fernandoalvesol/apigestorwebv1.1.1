@@ -17,16 +17,37 @@
                         <div class="p-2 radius-4 border">
                             <div class="   p-2 pt-0 radius-4">
                                 <div class="rows center-middle">     
-                                    <div class="col-4">
+                                    <div class="col-3">
                                         <label class="text-label d-block text-branco">Descrição </label>
                                         <input type="text" name="descricao" required
                                             value="" class="form-campo">
                                     </div>
                                     <div class="col-2">
-                                        <label class="text-label d-block text-branco">Movimento </label>
-                                        <input type="text" name="movimento" required
-                                            value=""
-                                            class="form-campo">
+                                        <label class="text-label d-block text-branco">Escolha a Operação </label>
+                                        <select name="operacao" id="operacao" value="operacao" class="form-campo">
+                                            <option value="selecione">Selecione</option>
+                                            <option value="mensalidade">Mensalidade</option>
+                                            <option value="adesao">Taxa de Adesão</option>
+                                            <option value="partipacao">Co-Participação</option>
+                                            <option value="acordo">Pagamento de Acordo</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-2">
+                                        <label class="text-label d-block text-branco">Escolha o Escritorio </label>
+                                        <select name="escritorio" id="escritorio" value="escritorio" class="form-campo">
+                                            <option value="selecione">Selecione</option>
+                                            <option value="itaquitinga">Setta Itaquitinga</option>
+                                            <option value="condado">Setta Condado</option>
+                                            <option value="goiana">Setta Goiana</option>
+                                            <option value="pedras de Fogo">Setta Pedras de Fogo</option>
+                                            <option value="araçoiaba">Setta Araçoiaba</option>
+                                            <option value="carpina">Setta Carpina</option>
+                                            <option value="araçoiaba">Setta Araçoiaba</option>
+                                            <option value="telecomgoiana">Telecom Goiana</option>
+                                            <option value="telecomcondado">Telecom Condado</option>
+                                            <option value="telecomitaquitinga">Telecom Itaquitinga</option>
+                                            <option value="telecomitambe">Telecom Itambe</option>
+                                        </select>
                                     </div>
                                     <div class="col-2">
                                         <label class="text-label d-block text-branco">Data Entrada </label>
@@ -35,13 +56,12 @@
                                             class="form-campo">
                                     </div>
                                     <div class="col-2">
-                                        <label class="text-label d-block text-branco">Valor </label>
+                                        <label class="text-label d-block text-branco">Informe o Valor </label>
                                         <input type="text" name="preco" value=""
                                             required class="form-campo">
                                     </div>
-
-                                    <div class="col-2 mt-0 pt-4">
-                                        <input type="submit" value="Salvar" class="w-100 btn btn-roxo text-uppercase">
+                                    <div class="col-1 mt-0 pt-4">
+                                        <input type="submit" value="Enviar" class="w-100 btn btn-roxo text-uppercase">
                                     </div>
                                 </div>
                             </div>
