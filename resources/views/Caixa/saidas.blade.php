@@ -29,6 +29,7 @@
                                             <option value="mensalidade">Refeição</option>
                                             <option value="adesao">Combustivel</option>
                                             <option value="partipacao">Sangria de Caixa</option>
+                                            <option value="tecnico">Serviço Tecnico</option>
                                             <option value="acordo">Diversos</option>
                                         </select>
                                     </div>
