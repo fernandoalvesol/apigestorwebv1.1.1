@@ -18,7 +18,7 @@
                     </li>
 
                     <li class="subcat">
-                        <a href="">Saídas</a>
+                        <a href="<?php echo e(route('saida.index')); ?>">Saídas</a>
                         
                     </li>
                 </ul>

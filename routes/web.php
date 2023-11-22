@@ -31,7 +31,7 @@ use App\Http\Controllers\Compra\ItemCompraController;
 //use App\Http\Controllers\Estoque\EntradaController;
 use App\Http\Controllers\Estoque\MovimentoController;
 use App\Http\Controllers\Estoque\ProdutoEstoqueController;
-use App\Http\Controllers\Estoque\SaidaController;
+//use App\Http\Controllers\Estoque\SaidaController;
 use App\Http\Controllers\Etiqueta\EtiquetaController;
 use App\Http\Controllers\Financeiro\CentroCustoController;
 use App\Http\Controllers\Financeiro\ContaPagarController;
@@ -92,6 +92,8 @@ use App\Http\Controllers\PainelFrenteAdminController;
 use App\Http\Controllers\PainelFrenteLojaController;
 use App\Http\Controllers\Caixa\CaixaController;
 use App\Http\Controllers\Caixa\EntradaController;
+use App\Http\Controllers\Caixa\SaidaController;
+
 
 
 use Illuminate\Support\Facades\Route;
@@ -386,7 +388,7 @@ Route::get('/lojapedido/cupom/{id}',[LojaPedidoController::class, 'cupom'])->nam
   Route::get('/produtograde/grade/{id}',[ProdutoGradeController::class,'grade'])->name('produtograde.grade');
 
   Route::post('/grade/alterarCodigoBarra',[GradeController::class,'alterarCodigoBarra'])->name('grade.alterarCodigoBarra');
-  Route::post('/grade/gradeParaEntradaSaida',[GradeController::class,'gradeParaEntradaSaida'])->name('grade.gradeParaEntradaSaida');
+  //Route::post('/grade/gradeParaEntradaSaida',[GradeController::class,'gradeParaEntradaSaida'])->name('grade.gradeParaEntradaSaida');
   Route::post('/grade/gradeComMovimento',[GradeController::class,'gradeComMovimento'])->name('grade.gradeComMovimento');
   Route::post('/grade/gradeTempComMovimento',[GradeController::class,'gradeTempComMovimento'])->name('grade.gradeTempComMovimento');
   Route::post('/grade/gerar',[GradeController::class,'gerar'])->name('grade.gerar');
@@ -504,6 +506,10 @@ Route::get("/util/buscarcnpj/{cnpj}", [UtilController::class, "buscarCNPJ"])->na
 
 //ROTA FLUXO DE CAIXA
 Route::get('/caixa', [CaixaController::class, 'index'])->name('caixa.index');
+//Rota de saidas do caixa
+Route::get('/saida', [SaidaController::class, 'index'])->name('saida.index');
+Route::post('/saidas.store', [SaidaController::class, 'store'])->name('saidas.store');
+//Rota de entradas do caixa
 Route::get('/entrada', [EntradaController::class, 'index'])->name('entrada.index');
 Route::post('/store', [EntradaController::class, 'store'])->name('entrada.store');
 
