@@ -9,134 +9,52 @@
                 </svg>
                 FLUXO DE CAIXA
             </span>
-
-            <div class="caixa">
-
-                <div class="px-2 py-2 w-100 d-grid">
-                    
-                    <?php echo csrf_field(); ?>
-                    <div class="p-2 radius-4 border">
-                        <div class="   p-2 pt-0 radius-4">
-                            <div class="rows center-middle">
-                                <div class="col-3">
-                                    <label class="text-label d-block text-branco">Plano de Conta </label>
-                                    
-                                </div>
-                                <div class="col-3">
-                                    <label class="text-label d-block text-branco">Fornecedor </label>
-                                    
-                                </div>
-
-                                <div class="col-3">
-                                    <label class="text-label d-block text-branco">Centro de Custo </label>
-                                    
-                                </div>
-
-                                <div class="col-3">
-                                    <label class="text-label d-block text-branco">Conta Corrente </label>
-                                    
-                                </div>
-
-                                <div class="col-3">
-                                    <label class="text-label d-block text-branco">Forma de Pagamento </label>
-                                    
-                                </div>
-                                <div class="col-3">
-                                    <label class="text-label d-block text-branco">Descrição </label>
-                                    <input type="text" name="descricao" required
-                                        value="" class="form-campo">
-                                </div>
-                                <div class="col-2">
-                                    <label class="text-label d-block text-branco">Dia Vcto </label>
-                                    <input type="number" name="dia_vencimento" required
-                                        value=""
-                                        class="form-campo">
-                                </div>
-                                <div class="col-2">
-                                    <label class="text-label d-block text-branco">Valor </label>
-                                    <input type="text" name="valor" value=""
-                                        required class="form-campo mascara-float">
-                                </div>
-
-                                <div class="col-2 mt-0 pt-4">
-                                    <input type="submit" value="Salvar" class="w-100 btn btn-roxo text-uppercase">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-
+        </div>       
         <div class="col-12">
             <div class="px-2">
                 <div class="tabela-responsiva pb-4">
                     <table cellpadding="0" cellspacing="0" id="dataTable" width="100%" class="table despesafixa">
                         <thead>
                             <tr>
-                                <th align="center">Id</th>
+                                <th align="center">Tipo</th>
                                 <th align="left">Descrição</th>
-                                <th align="left">Dia Vcto</th>
-                                <th align="left">Valor</th>
+                                <th align="left">Data</th>
+                                <th align="left">Valor R$</th>
                                 <th align="left">Plano de Conta</th>
                                 <th align="left">Forma Pagto</th>
-                                <th align="center">Ação</th>
+                                <th align="left">Escritorio</th>
+                                <th align="left" width="10px">Ação</th>
                             </tr>
                         </thead>
                         <tbody>
+                            <?php $__empty_1 = true; $__currentLoopData = $caixas; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $caixa): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
                                 <tr>
-                                    <td align="center"></td>
-                                    <td align="left"></td>
-                                    <td align="left"></td>
-                                    <td align="left"></td>
-                                    <td align="left"></td>
-                                    <td align="left"></td>
-                                    <td align="center">
-                                        <a href=""
-                                            class="d-inline-block btn btn-outline-roxo btn-pequeno"><i
-                                                class="fas fa-edit"></i>
-                                            Editar</a>
-
-                                        <a href="javascript:;"
-                                            onclick="confirm('Tem Certeza?') ? document.getElementById().submit() : '';"
-                                            class="d-inline-block btn btn-outline-vermelho btn-pequeno">
-                                            <i class="fas fa-trash-alt"></i>
-                                            <form action="" method="POST"
-                                                id="">
-                                                <?php echo method_field('DELETE'); ?>
-                                                <?php echo csrf_field(); ?>
-                                            </form>
-
-                                            Excluir
-                                        </a>
-                                    </td>
+                                    <?php if($caixa->tipo == 1): ?>
+                                        <td align="center">Entrada</td>
+                                    <?php else: ?>
+                                        <td align="center">Saida</td>
+                                    <?php endif; ?>
+                                    <td align="left"><?php echo e($caixa->descricao); ?></td>
+                                    <td align="left"><?php echo e(date('d/m/y', strtotime($caixa->data))); ?></td>
+                                    <td>R$ &nbsp;<?php echo e($caixa->preco); ?></td>                                    
+                                    <td align="left"><?php echo e($caixa->operacao); ?></td>
+                                    <td align="left"><?php echo e($caixa->pagamento); ?></td>
+                                    <td align="left"><?php echo e($caixa->escritorio); ?></td>
+                                    <td style="width=10px;">
+                                        <a href="" class="btn btn-warning">Editar</a>
+                                        <a href="" class="btn btn-warning">Deletar</a>
+                                    </td>        
                                 </tr>
-
+                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
+                            <div style="text-align: center;">
+                                    <h3><b>Caixa em branco</b></h3>
+                            </div>
+                            <?php endif; ?>
                         </tbody>
                     </table>
-
                 </div>
-
-            </div>
-
-
-            <!--
-                                                                                                                                                                                                                                                                                            <div class="caixa p-2">
-                                                                                                                                                                                                                                                                                                    <div class="msg msg-verde">
-                                                                                                                                                                                                                                                                                                    <p><b><i class="fas fa-check"></i> Mensagem de boas vindas</b> Parabéns seu produto foi inserido com sucesso</p>
-                                                                                                                                                                                                                                                                                                    </div>
-                                                                                                                                                                                                                                                                                                    <div class="msg msg-vermelho">
-                                                                                                                                                                                                                                                                                                    <p><b><i class="fas fa-times"></i> Mensagem de Erro</b> Houve um erro</p>
-                                                                                                                                                                                                                                                                                                    </div>
-                                                                                                                                                                                                                                                                                                    <div class="msg msg-amarelo">
-                                                                                                                                                                                                                                                                                                    <p><b><i class="fas fa-exclamation-triangle"></i> Mensagem de aviso</b> Tem um aviso pra você</p>
-                                                                                                                                                                                                                                                                                                    </div>
-                                                                                                                                                                                                                                                                                            </div>
-                                                                                                                                                                                                                                                                                            -->
+            </div>                                                                                                                                                                                                                                                                          -->
         </div>
-
     </div>
 <?php $__env->stopSection(); ?>
 

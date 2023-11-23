@@ -20,6 +20,7 @@ class SaidaController extends Controller
 
         $data = $request->all();
         $data['tipo'] = '2';
+        $data['pagamento'] = 'PAGO';
 
         Caixa::create($data);
 

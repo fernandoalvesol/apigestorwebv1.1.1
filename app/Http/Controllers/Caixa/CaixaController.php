@@ -8,9 +8,19 @@ use App\Models\Caixa;
 
 class CaixaController extends Controller
 {
+    private $repositoy;
+
+    public function __construct(Caixa $caixas){
+
+        $this->repository = $caixas;
+
+    }
     
     public function index(){
 
-        return view('Caixa.caixa');
+        $caixas = $this->repository->all();
+
+    	return view('Caixa.caixa', compact('caixas'));
+
     }
 }

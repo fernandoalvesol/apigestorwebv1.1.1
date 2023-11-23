@@ -16,39 +16,48 @@
                         <div class="p-2 radius-4 border">
                             <div class="   p-2 pt-0 radius-4">
                                 <div class="rows center-middle">     
-                                    <div class="col-3">
+                                    <div class="col-5">
                                         <label class="text-label d-block text-branco">Descrição </label>
                                         <input type="text" name="descricao" required
                                             value="" class="form-campo">
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-3">
                                         <label class="text-label d-block text-branco">Escolha a Operação </label>
                                         <select name="operacao" id="operacao" value="operacao" class="form-campo">
                                             <option value="selecione">Selecione</option>
-                                            <option value="mensalidade">Mensalidade</option>
-                                            <option value="adesao">Taxa de Adesão</option>
-                                            <option value="partipacao">Co-Participação</option>
-                                            <option value="acordo">Pagamento de Acordo</option>
+                                            <option value="MENSALIDADE">Mensalidade</option>
+                                            <option value="ADESAO">Taxa de Adesão</option>
+                                            <option value="CO-PARTICIPACAO">Co-Participação</option>
+                                            <option value="ACORDO">Pagamento de Acordo</option>
                                         </select>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-3">
                                         <label class="text-label d-block text-branco">Escolha o Escritorio </label>
                                         <select name="escritorio" id="escritorio" value="escritorio" class="form-campo">
                                             <option value="selecione">Selecione</option>
-                                            <option value="itaquitinga">Setta Itaquitinga</option>
-                                            <option value="condado">Setta Condado</option>
-                                            <option value="goiana">Setta Goiana</option>
-                                            <option value="pedras de Fogo">Setta Pedras de Fogo</option>
-                                            <option value="araçoiaba">Setta Araçoiaba</option>
-                                            <option value="carpina">Setta Carpina</option>
-                                            <option value="araçoiaba">Setta Araçoiaba</option>
-                                            <option value="telecomgoiana">Telecom Goiana</option>
-                                            <option value="telecomcondado">Telecom Condado</option>
-                                            <option value="telecomitaquitinga">Telecom Itaquitinga</option>
-                                            <option value="telecomitambe">Telecom Itambe</option>
+                                            <option value="ITAQUITINGA">Setta Itaquitinga</option>
+                                            <option value="CONDADO">Setta Condado</option>
+                                            <option value="GOIANA">Setta Goiana</option>
+                                            <option value="PEDRAS DE FOGO">Setta Pedras de Fogo</option>
+                                            <option value="ARACOIABA">Setta Araçoiaba</option>
+                                            <option value="CARPINA">Setta Carpina</option>
+                                            <option value="TELECOM GOIANA">Telecom Goiana</option>
+                                            <option value="TELECOM CONDADO">Telecom Condado</option>
+                                            <option value="TELECOM ITAQUITINGA">Telecom Itaquitinga</option>
+                                            <option value="TELECOM ITAMBE">Telecom Itambe</option>
                                         </select>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-3">
+                                        <label class="text-label d-block text-branco">Forma de Pagamento </label>
+                                        <select name="pagamento" id="pagamento" value="pagamento" class="form-campo">
+                                            <option value="selecione">Selecione</option>
+                                            <option value="DINHEIRO">DINHEIRO</option>
+                                            <option value="TRANSFERENCIA">TRANSFERÊNCIA</option>
+                                            <option value="PIX">PIX</option>
+                                            <option value="OUTROS">OUTROS</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3">
                                         <label class="text-label d-block text-branco">Data Entrada </label>
                                         <input type="date" name="data" required
                                             value=""
@@ -59,7 +68,7 @@
                                         <input type="text" name="preco" value=""
                                             required class="form-campo">
                                     </div>
-                                    <div class="col-1 mt-0 pt-4">
+                                    <div class="col-1 mt-0 pt-5">
                                         <input type="submit" value="Enviar" class="w-100 btn btn-roxo text-uppercase">
                                     </div>
                                 </div>

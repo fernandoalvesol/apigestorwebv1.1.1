@@ -26,28 +26,27 @@
                                         <label class="text-label d-block text-branco">Escolha a Operação </label>
                                         <select name="operacao" id="operacao" value="operacao" class="form-campo">
                                             <option value="selecione">Selecione</option>
-                                            <option value="mensalidade">Refeição</option>
-                                            <option value="adesao">Combustivel</option>
-                                            <option value="partipacao">Sangria de Caixa</option>
-                                            <option value="tecnico">Serviço Tecnico</option>
-                                            <option value="acordo">Diversos</option>
+                                            <option value="REFEICAO">Refeição</option>
+                                            <option value="COMBUSTIVEL">Combustivel</option>
+                                            <option value="SANGRIA">Sangria de Caixa</option>
+                                            <option value="TECNICO">Serviço Tecnico</option>
+                                            <option value="DIVERSOS">Diversos</option>
                                         </select>
                                     </div>
                                     <div class="col-2">
                                         <label class="text-label d-block text-branco">Escolha o Escritorio </label>
                                         <select name="escritorio" id="escritorio" value="escritorio" class="form-campo">
                                             <option value="selecione">Selecione</option>
-                                            <option value="itaquitinga">Setta Itaquitinga</option>
-                                            <option value="condado">Setta Condado</option>
-                                            <option value="goiana">Setta Goiana</option>
-                                            <option value="pedras de Fogo">Setta Pedras de Fogo</option>
-                                            <option value="araçoiaba">Setta Araçoiaba</option>
-                                            <option value="carpina">Setta Carpina</option>
-                                            <option value="araçoiaba">Setta Araçoiaba</option>
-                                            <option value="telecomgoiana">Telecom Goiana</option>
-                                            <option value="telecomcondado">Telecom Condado</option>
-                                            <option value="telecomitaquitinga">Telecom Itaquitinga</option>
-                                            <option value="telecomitambe">Telecom Itambe</option>
+                                            <option value="ITAQUITINGA">Setta Itaquitinga</option>
+                                            <option value="CONDADO">Setta Condado</option>
+                                            <option value="GOIANA">Setta Goiana</option>
+                                            <option value="PEDRAS DE FOGO">Setta Pedras de Fogo</option>
+                                            <option value="ARACOIABA">Setta Araçoiaba</option>
+                                            <option value="CARPINA">Setta Carpina</option>
+                                            <option value="TELECOM GOIANA">Telecom Goiana</option>
+                                            <option value="TELECOM CONDADO">Telecom Condado</option>
+                                            <option value="TELECOM ITAQUITINGA">Telecom Itaquitinga</option>
+                                            <option value="TELECOM ITAMBE">Telecom Itambe</option>
                                         </select>
                                     </div>
                                     <div class="col-2">

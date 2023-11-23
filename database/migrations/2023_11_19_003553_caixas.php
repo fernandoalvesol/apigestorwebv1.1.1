@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('descricao', 150);
             $table->string('operacao', 100);
-            $table->string('escritorio');
+            $table->string('escritorio', 100);
+            $table->string('pagamento', 100);
             $table->date('data');
             $table->decimal('preco', 10, 2);
             $table->enum('tipo', [1,2]);
