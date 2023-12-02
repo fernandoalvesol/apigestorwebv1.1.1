@@ -131,13 +131,13 @@ position: absolute;
 
 /*menutopo*/
 .menu-topo{display:block;}
-.menu-topo li{display: flex;  color: rgb(225 212 212); align-items: center; flex-wrap: wrap;}
+.menu-topo li{display: flex;color: rgb(225 212 212);align-items: center;flex-wrap: wrap;text-align: right;margin: 0px 3px 2px 1301px;}
 .menu-topo li>a{   color: rgba(0,0,0,.5);}
 .menu-topo .img-user{width: 35px;   height: 35px;   border-radius: 50px;    margin-right: 10px;    overflow: hidden;   display: inline-block;   position: relative;   top: 0px;   border: solid 1px #ddd;    background: #ddd;}
 .menu-topo .sub ul{display:none}
 .menu-topo .sub:hover > ul
-{	display: block;    position: absolute;    top: 86%;    transition: all 0.7s ease;    z-index: 99999;    width: 215px;    background: #1d1038;    right: 17px;    border-radius: 4px;    overflow: hidden;}
-.menu-topo .sub ul li a{padding:10px;display:block;color:#fff}
+{display: block;position: absolute;top: 86%;transition: all 0.7s ease;z-index: 99999;width: 215px;background: #f7f7f7;right: 17px;border-radius: 4px;overflow: hidden;}
+.menu-topo .sub ul li a{padding:10px;display:block;color: #0a0a0a;}
 .menu-topo .sub ul li {display:block;color:#fff}
  .menu-lateral{	height:100%;    position: fixed;    top: 0;    bottom: 0;    left: 0;    background:#20123F;	z-index:2;	transition:all .4s;	width: calc(123px - 60px);	transition:width .4s linear}
 .menu-lateral:hover{width: calc(320px - 60px);transition:width .4s linear}

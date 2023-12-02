@@ -11,12 +11,9 @@
             @else
                 <img src="{{ asset('assets/img/logo-brasil.png') }}" class="img-user">
             @endif
-            <span class="text-branco">{{ Auth::user()->name ?? null }}</span>
-            <ul>
-                <li><a href="#" class=""><i class="fas fa-lock"></i> Meu Perfil</a> </li>
-
-                <li><a href="{{ route('logout') }}">Sair</a></li>
-            </ul>
+            <span class="text-branco"><a href="{{ route('logout') }}">SAIR</a>
+            </span>
+            
         </li>
     </ul>
 </div>

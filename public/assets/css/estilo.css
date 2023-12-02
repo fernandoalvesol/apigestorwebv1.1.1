@@ -18,3 +18,31 @@
     background-color: #0e0101;
     color: #f1eaea;
 }
+
+.subtitlepes{
+    color: #0a0909;
+    margin: -14px -1px 1px 1px;
+    font-size: 15px;
+}
+
+.tabelafluxo{
+    padding: 11px 52px 7px 29px;
+    margin: 11px -1px -22px 38px;
+}
+
+.pesquisar{
+    margin: 25px -6px -8px -320px;
+    padding: 2px 9px 9px 9px;
+}
+
+.btn-editar{
+    background: #1516c3;
+    margin: 5px 5px 5px -40px;
+    color: #ccc;
+}
+
+.btn-deletar{
+    margin: -70px 21px 3px 37px;
+    background: #e90909;
+    color: #f1eaea;
+}
