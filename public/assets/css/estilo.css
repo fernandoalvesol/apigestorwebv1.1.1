@@ -1,0 +1,20 @@
+.pesquisarform {
+    margin: 9px 9px 12px -5px;
+    padding: 17px 8px 8px 8px;
+    text-align: right;
+}
+
+.titlefluxo{
+    color: #1c1616;
+    text-align: left;
+    margin: 52px 6px 6px -2px;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.caixaentradas{
+    margin: 71px 8px 10px 9px;
+    padding: 27px 11px 9px 9px;
+    background-color: #0e0101;
+    color: #f1eaea;
+}
