@@ -13,7 +13,7 @@ class SaidaController extends Controller
 
         $title = "Saidas do Caixa";
 
-        return view('Caixa.saidas', compact('title'));
+        return view('Caixa.saida', compact('title'));
     }
 
     public function store(Request $request, Caixa $caixa){

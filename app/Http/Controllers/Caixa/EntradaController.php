@@ -13,7 +13,7 @@ class EntradaController extends Controller
 
         $title = "Entradas";
 
-        return view('Caixa.entradas', compact('title'));
+        return view('Caixa.index', compact('title'));
     }
 
     public function store(Request $request){

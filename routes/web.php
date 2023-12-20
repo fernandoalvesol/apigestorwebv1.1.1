@@ -506,6 +506,13 @@ Route::get("/util/buscarcnpj/{cnpj}", [UtilController::class, "buscarCNPJ"])->na
 
 //ROTA FLUXO DE CAIXA
 Route::get('/caixa', [CaixaController::class, 'index'])->name('caixa.index');
+Route::any('caixa/search', [CaixaController::class, 'search'])->name('caixa.search');
+Route::any('caixa/pesquisar', [CaixaController::class, 'pesquisar'])->name('caixa.pesquisar');
+Route::get('caixa/{id}/edit', [CaixaController::class, 'edit'])->name('caixa.edit');
+Route::put('caixa/{id}', [CaixaController::class, 'update'])->name('caixa.update');
+Route::get('caixa/{id}', [CaixaController::class, 'destroy'])->name('caixa.delete');
+
+
 //Rota de saidas do caixa
 Route::get('/saida', [SaidaController::class, 'index'])->name('saida.index');
 Route::post('/saidas.store', [SaidaController::class, 'store'])->name('saidas.store');

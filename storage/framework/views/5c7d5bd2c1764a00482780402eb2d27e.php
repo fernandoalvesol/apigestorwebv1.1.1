@@ -11,12 +11,9 @@
             <?php else: ?>
                 <img src="<?php echo e(asset('assets/img/logo-brasil.png')); ?>" class="img-user">
             <?php endif; ?>
-            <span class="text-branco"><?php echo e(Auth::user()->name ?? null); ?></span>
-            <ul>
-                <li><a href="#" class=""><i class="fas fa-lock"></i> Meu Perfil</a> </li>
-
-                <li><a href="<?php echo e(route('logout')); ?>">Sair</a></li>
-            </ul>
+            <span class="text-branco"><a href="<?php echo e(route('logout')); ?>">SAIR</a>
+            </span>
+            
         </li>
     </ul>
 </div>
